@@ -1,0 +1,22 @@
+<div class="container py-4 d-flex justify-content-center">
+  <div class="card d-flex align-items-center py-2" style="width: 18rem">
+    <h3>Accout Login</h3>
+    <form action="/" method="POST">
+      <div class="row m-2">
+        {{#if incorrect}}
+        <div class="alert alert-danger" role="alert">
+          {{wrongMessage}}
+        </div>
+        {{/if}}
+        <input type="email" class="form-control" id="userEmail" name="userEmail" aria-describedby="emailHelp"
+          placeholder="Email address">
+      </div>
+      <div class="row m-2">
+        <input type="password" class="form-control" id="userPassword" name="userPassword" placeholder="Password">
+      </div>
+      <div class="d-flex align-items-center">
+        <button type="submit" class="btn btn-primary mx-auto my-2">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>
